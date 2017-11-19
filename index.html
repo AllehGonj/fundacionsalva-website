@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es-ES" ng-app>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="SALVA es una fundación  protectora de animales, que busca ayudar a fauna domestica en estado de abandono.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Fundación Salva</title>
+
+        <meta name=”robots” content="salva, fundación protectora, animales, fauna domestica, abandono, atención veterinaria, albergue, cuidado, protección y alimentación, manejo humanitario, callejera, colombia, vida animal, perritos, perros, gatitos, gatos, esterilización, donación, apadrinamiento">
+        <meta name='keywords' content="salva, fundación protectora, animales, fauna domestica, abandono, atención veterinaria, albergue, cuidado, protección y alimentación, manejo humanitario, callejera, colombia, vida animal, perritos, perros, gatitos, gatos, esterilización, donación, apadrinamiento"/>
+        <meta name="twitter:site" content="@FundacionSalva"/>
+        <meta property="article:publisher" content="https://www.facebook.com/fundacion.salva/"/>
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:title" content="Fundación Salva" />
+        <meta property="og:site_name" content="Fundación Salva" />
+
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.scss">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.min.js"> </script>
+        <script src="components/home.js"></script>
+    </head>
+    <body>
+        <div id="loading_container">
+            <div id="loading"></div>
+        </div>
+
+        <header id="header">
+            <nav class="menu">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo-android-green_1x.png" alt="">
+                    </a>
+                    <a href="#" class="btn-menu" id="btn-menu">
+                        <i class="icon fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="links" id="links">
+                    <a href="" id="btn-home">Inicio</a>
+                    <a href="">Dona</a>
+                    <a href="">Adopta</a>
+                    <a href="">Apadrina</a>
+                    <a href="">Contáctanos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="home">
+                <img src="assets/images/dog-main.jpg" alt="">
+                <article>
+                    <h1>Fundación Salva</h1>
+                    <hr>
+                    <p>SALVA es una fundación protectora de animales, que busca ayudar a fauna domestica en estado de abandono; brindando atención veterinaria, albergue, cuidado, protección, alimentación y promoción de campañas de manejo humanitario de fauna domestica callejera.</p>
+                </article>        
+            </section>
+
+            <section class="cards-section" ng-repeat="control in homeCtrl.listControls">
+                <div class="card-header">
+                    <h2 class="card__title-text">{{control.title}}</h2>
+                </div>
+                <div class="card__supporting-text">
+                    {{control.description}}
+                </div>
+                <div class="card-footer-info">
+                    <a class="card-btn">
+                        {{control.btn_text}}
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/loading-page.js"></script>
+        <script src="js/headroom.min.js"></script>
+        <script src="js/jquery.min.js"></script>    
+        <script src="js/menu.js"></script>
+    </body>
+</html>
