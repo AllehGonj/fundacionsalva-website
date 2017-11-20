@@ -22,9 +22,8 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.scss">
         
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-        <script src="components/home.js"></script>
-        <script src="js/app.js"></script>
+        <!--<script src="components/home.js"></script>-->
+        <!--<script src="js/app.js"></script>-->
         
     </head>
     <body>
@@ -133,30 +132,58 @@
                 </div>
             </section>
 
-            <section id="contact-us--section">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum in enim officia, atque amet esse eum tempore inventore sunt qui facilis fugiat architecto molestiae odit quas est neque ab.</p>
+            <hr id="donation_separator">
 
+            <section id="adoption--section">
+                <section id="article--section">
+                    <h3 id="adoption--title">¡Adopta a un hermoso perrito!</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto alias quisquam ab culpa numquam, vel veniam minima quos, assumenda iure necessitatibus porro. Culpa provident eius, cumque voluptate vero recusandae facilis.</p>
+                    <a href="" id="more_puppies">Conoce más perritos</a>
+                </section>
+                <section id="puppies">
+                    <section class="puppies_cards-section" ng-repeat="control in homeCtrl.listControls">
+                        <img src="assets/dog_1.jpg" alt="">
+                        <div class="puppies_card__supporting-text">
+                            <h4>
+                                Aenan convallis.
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="puppies_card--info">
+                            <a id="puppies_card-btn" href="#">
+                                ¡Dona ahora!
+                            </a>
+                        </div>
+                    </section>
+                    <section class="puppies_cards-section" ng-repeat="control in homeCtrl.listControls">
+                        <img src="assets/dog_2.jpg" alt="">
+                        <div class="puppies_card__supporting-text">
+                            <h4>
+                                Aenan convallis.
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="puppies_card--info">
+                            <a id="puppies_card-btn" href="#">
+                                ¡Dona ahora!
+                            </a>
+                        </div>
+                    </section>
+                    <section class="puppies_cards-section" ng-repeat="control in homeCtrl.listControls">
+                        <img src="assets/dog_3.jpg" alt="">
+                        <div class="puppies_card__supporting-text">
+                            <h4>
+                                Aenan convallis.
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="puppies_card--info">
+                            <a id="puppies_card-btn" href="#">
+                                ¡Dona ahora!
+                            </a>
+                        </div>
+                    </section>
+                </section>
             </section>
 
             <footer>

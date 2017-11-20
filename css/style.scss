@@ -342,6 +342,7 @@ header{
     text-align: center;
     padding: 20px;
     border-radius: 2px;
+    margin-bottom: 100px;
 }
 
 #btn-donation--link{
@@ -356,7 +357,71 @@ header{
     background: #0363e0;
 }
 
+#donation_separator{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#adoption--section{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+#puppies{
+    display: flex;
+    flex-direction: column;
+    
+    height: 70%;
+}
+
+#article--section{
+    width: 40%;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 30px;
+}
+
+#puppies section{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    height: 200px;
+    background: #fff;
+    
+    margin-bottom: 50px;
+
+    width: auto;
+}
+
+#puppies section img{
+    height: 100%;
+}
+
+#article--section h3{
+    
+    padding: 20px;
+}
+
+#article--section p{
+    
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#article--section a{
+    text-decoration: none;
+    padding: 20px;
+    padding-bottom: 50px;  
+}
+
 footer{
+    margin-top: 50px;
     bottom: 0;
 }
 
@@ -460,7 +525,3 @@ footer #bottom-footer{
     font-size: 2.5em;
 }
 
-#contact-us--section{
-    
-    margin-top: 100px;
-}
