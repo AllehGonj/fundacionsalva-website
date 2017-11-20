@@ -1,0 +1,55 @@
+<section id="home">
+    <div id="loading_container">
+        <div id="loading"></div>
+    </div>
+
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo-android-green_1x.png" alt="">
+                </a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="icon fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="links" id="links">
+                <a href="" id="btn-home">Inicio</a>
+                <a href="">Dona</a>
+                <a href="">Adopta</a>
+                <a href="">Apadrina</a>
+                <a href="">Contáctanos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <img src="assets/images/dog-main.jpg" alt="">
+            <article>
+                <h1>Fundación Salva</h1>
+                <hr>
+                <p>SALVA es una fundación protectora de animales, que busca ayudar a fauna domestica en estado de abandono; brindando atención veterinaria, albergue, cuidado, protección, alimentación y promoción de campañas de manejo humanitario de fauna domestica callejera.</p>
+            </article>        
+        </section>
+
+        <section class="cards-section" ng-repeat="control in homeCtrl.listControls">
+            <div class="card-header">
+                <h2 class="card__title-text">{{control.title}}</h2>
+            </div>
+            <div class="card__supporting-text">
+                {{control.description}}
+            </div>
+            <div class="card-footer-info">
+                <a class="card-btn">
+                    {{control.btn_text}}
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/loading-page.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/jquery.min.js"></script>    
+    <script src="js/menu.js"></script>
+</section>        
