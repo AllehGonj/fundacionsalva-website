@@ -1,0 +1,287 @@
+*{
+	
+margin:0;
+padding:0;
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+	background: #f0f2f1;
+
+}
+
+a{
+	text-decoration: none;
+}
+.container{
+	height: 100%;
+	max-width: 1200px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+	margin-bottom: 20px;
+		
+}
+
+.container_card{
+	margin:20px;
+
+}
+.container .divider{
+	background: grey;
+	height: 210px;
+    position:absolute;
+    left:50%;
+    top:15%;
+    bottom:0;
+    border-left:0.2px solid;
+    
+}
+
+
+
+figure{
+	width: 400px;
+	height: 240px;
+	margin: 0;
+	position: relative;
+	
+	
+
+}
+
+
+
+figure .frontal{
+	width: 100%;
+	height: 210px;
+	padding: 20px;
+	border-radius: 5px;
+	background: #fff;
+	display: block;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+
+}
+
+
+figure .frontal h2{
+	font-weight: 800;
+	margin-bottom: 20px;
+	font-size: 24px;
+	text-align:center;
+}
+
+figure .frontal hr{
+	height: 2px;
+	background: black;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+
+}
+
+
+figure .frontal p{
+	line-height: 22px;
+	font-size: 14px;
+}
+
+
+
+#donation_separator{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+.title-galery {
+    text-rendering: optimizeLegibility;
+    font-size: 2.0em;
+    position: relative;
+    margin: 10px auto 1em;
+    padding: 1em 3em .5em 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    
+    
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+
+
+
+
+#container{
+        width: 1000px;
+        heigth: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction:row;
+        overflow: hidden;
+    }
+
+    #container > #top {
+        display: flex;
+        flex-direction:column;
+        max-width: 100%;
+        width: auto;
+        overflow: hidden;
+    }
+
+    #container > #top > #top-top {
+        overflow:hidden;
+        height: auto;
+    }
+
+    #container > #top > #top-bottom {
+        display: flex;
+        flex-direction:row;
+        overflow:hidden;
+        height: auto;
+    }
+
+    #container > #top > #top-bottom > .bt-west{
+        
+        width: auto;
+       
+    }
+
+    #container > #top > #top-bottom > .bt-east{
+        
+        width: auto;
+       
+    }
+
+    #container > #bottom {
+        width: 50%;
+        display: flex;
+        flex-direction:row;
+       
+        overflow: hidden;
+    }
+
+    #container > #bottom > #asd{
+        display: flex;
+        flex-direction:column;
+        
+        overflow: hidden;
+    }
+
+   
+
+    #container > #bottom > #asd > .b{
+        height: 50%;
+        
+        overflow: hidden;
+    }
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.information{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     align-items: center;
+     align-content: space-around;
+}
+
+#information-button{
+
+
+    width: 300px;
+    background: #eceff1;
+font-size: 1.2rem;
+font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+    
+
+          color: #0fa89e;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 10px 16px;
+    background-color: #fff;
+    
+}
+
+.modal-header img{
+        width: 100px
+}
+
+
+.modal-body {
+
+   background: #f0f2f1;
+    padding: 15px 16px;}
+
+
+
+/* Add Animation */
+
